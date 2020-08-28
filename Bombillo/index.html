@@ -1,0 +1,31 @@
+<!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script_attribute link para probar este programa y funcione -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+
+
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light()">Light</button>
+
+</p>
+
+</body>
+
+<script>
+function light() {
+  var pic;  if(document.getElementById('myImage').src=="https://www.w3schools.com/html/pic_bulbon.gif") 	{
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+</html>
